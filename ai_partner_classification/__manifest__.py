@@ -2,10 +2,14 @@
     "name": "AI Partner Classification",
     "version": "19.0.1.0.0",
     "summary": "AI-based customer classification and insights",
-    "author": "Accounts Techs",
+    "author": "AcTechsIT Technology",
     "website": "https://actechsit.com",
     "category": "Sales/CRM",
     "license": "LGPL-3",
+    "images": [
+    "static/description/cover.png",    
+    "static/description/icon.png"             
+],
     "depends": [
         "base",
         "contacts",
@@ -25,3 +29,4 @@
     "application": True,
     "auto_install": False,
 }
+
