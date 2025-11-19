@@ -64,6 +64,15 @@
             border-radius: 4px;
             font-size: 12px;
         }
+        .credentials {
+            margin-top: 12px;
+            font-size: 13px;
+            color: #cbd5e1;
+            background: #1e293b;
+            padding: 10px 14px;
+            border-radius: 12px;
+            border: 1px solid rgba(148,163,184,0.18);
+        }
     </style>
 </head>
 <body>
@@ -85,16 +94,20 @@
 
     <div class="section">
         <h2>Live Demo</h2>
-        <p>
-            You can try the module on a live Odoo 19 instance to see the classification in action.
-        </p>
-        <p>
-            <strong>Live demo URL:</strong><br />
-            <a href="https://odoo.laksis-dev.com/web/login?db=actechs_demo " target="_blank">
-                https://odoo.laksis-dev.com/web/login?db=actechs_demo 
+        <p>You can try the module on a live Odoo 19 instance to see the classification in action.</p>
+
+        <p><strong>Live demo URL:</strong><br>
+            <a href="https://odoo.laksis-dev.com/web/login?db=actechs_demo" target="_blank">
+                https://odoo.laksis-dev.com/web/login?db=actechs_demo
             </a>
         </p>
-        <a class="btn-demo" href="https://odoo.laksis-dev.com/web/login?db=actechs_demo " target="_blank">
+
+        <div class="credentials">
+            <strong>Username:</strong> test<br>
+            <strong>Password:</strong> test
+        </div>
+
+        <a class="btn-demo" href="https://odoo.laksis-dev.com/web/login?db=actechs_demo" target="_blank">
             🔗 Open Live Demo
         </a>
     </div>
@@ -114,9 +127,7 @@
 
     <div class="section">
         <h2>How It Works</h2>
-        <p>
-            The module looks at your posted customer invoices and computes simple metrics:
-        </p>
+        <p>The module looks at your posted customer invoices and computes simple metrics:</p>
         <ul>
             <li>Total invoiced amount per customer.</li>
             <li>Average invoice amount.</li>
@@ -133,9 +144,9 @@
     <div class="section">
         <h2>Default Classification Rules</h2>
         <ul>
-            <li><strong>VIP</strong> → total invoices ≥ 20,000 and average invoice ≥ 5,000 and overdue &lt; 30%.</li>
-            <li><strong>High Value</strong> → total invoices ≥ 5,000 and overdue &lt; 50%.</li>
-            <li><strong>High Risk</strong> → overdue ratio ≥ 50% of posted invoices.</li>
+            <li><strong>VIP</strong> → total invoices ≥ 20,000 and average invoice ≥ 5,000 and overdue &lt; 30 percent.</li>
+            <li><strong>High Value</strong> → total invoices ≥ 5,000 and overdue &lt; 50 percent.</li>
+            <li><strong>High Risk</strong> → overdue ratio ≥ 50 percent of posted invoices.</li>
             <li><strong>Low Value</strong> → total invoices &lt; 1,000.</li>
             <li><strong>Inactive</strong> → no posted invoices found.</li>
             <li><strong>Active</strong> → any other customer that does not match the rules above.</li>
@@ -149,10 +160,10 @@
     <div class="section">
         <h2>Benefits</h2>
         <ul>
-            <li>Give your sales team a clear view of who matters most (VIP &amp; High Value).</li>
+            <li>Give your sales team a clear view of who matters most.</li>
             <li>Identify risky customers early based on overdue behavior.</li>
-            <li>Spot inactive customers and plan win-back campaigns.</li>
-            <li>All logic is rule-based and transparent – no “black box” AI.</li>
+            <li>Spot inactive customers and plan win back campaigns.</li>
+            <li>All logic is rule based and transparent.</li>
         </ul>
     </div>
 
